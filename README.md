@@ -17,6 +17,8 @@ Your project should demonstrate many of the responsive design tools you learned.
 
 ## Technologies
 
+- HTML5
+- CSS3
 - JavaScript ES6
 
 ## Setup
@@ -27,3 +29,5 @@ To view the final output, click [here](https://daniellabrador.github.io/codecade
 
 The techniques utilized was based on the lessons taught in [Codecademy's Full-Stack Engineer Course](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path
 ). The challenge is also provided by Codecademy. To view outputs of other Codecademy students, check out the [forums](https://discuss.codecademy.com/t/responsive-club-website-css/462382).
+
+The content of the site is inspired from [Brighton Table Tennis Club](https://brightontabletennisclub.com/)'s site.
