@@ -357,7 +357,8 @@ header .desktop {
 #news .news-snippet a {
     text-decoration: none;
     line-height: 2rem;
-    border-bottom: 1px solid #061d48;
+    color: black;
+    border-bottom: 1px solid black;
 }
 
 #news .news-snippet a:hover {
