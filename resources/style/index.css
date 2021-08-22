@@ -71,12 +71,15 @@ section {
     grid-area: divider;
     display: flex;
     align-items: flex-end;
-    width: 100%;
+    text-align: center;
+    border: 0;
+    width: 105%;
 }
 
 .divider img {
     position: relative;
-    width: 100%;
+    width: 105%;
+    left: -1px;
     top: 1px;
     user-select: none;
 }
