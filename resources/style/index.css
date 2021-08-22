@@ -71,6 +71,7 @@ section {
 .divider {
     grid-area: divider;
     display: flex;
+    align-self: flex-end;
     align-items: flex-end;
     text-align: center;
     width: calc(100% + 2px);
@@ -96,10 +97,22 @@ section {
     grid-gap: 2rem;
 }
 
+@media only screen and (min-width: 800px) {
+    .col2-container {
+        grid-template: 1fr / repeat(2, 1fr);
+    }
+}
+
 .col3-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .col3-container {
+        grid-template: 1fr / repeat(3, 1fr);
+    }
 }
 
 .max-width {
@@ -120,7 +133,7 @@ section {
 @media screen and (min-width: 800px) {
     .max-width-half-right {
         max-width: 550px;
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }
 
@@ -147,14 +160,7 @@ section {
 
 
 
-
 /*----- Header-----*/
-header div.mobile {
-    height: 4rem !important;
-    padding: 1rem !important;
-    position: relative;
-    z-index: 2;
-}
 
 /* Offer */
 #offer {
@@ -169,11 +175,13 @@ header div.mobile {
     user-select: none;
 }
 
-/* Logo and icons*/
-header div.mobile {
-    min-width: 310px;
+@media only screen and (min-width: 800px) {
+    #offer {
+        font-size: .9rem;
+    }
 }
 
+/* Logo and icons*/
 header .logo {
     height: 100%;
     display: flex;
@@ -243,13 +251,29 @@ nav.mobile ul a li {
     color: white;
 }
 
+@media only screen and (min-width: 800px) {
+    nav.mobile ul a li {
+        font-size: 1rem;
+    }
+}
+
 /* Header display */
 header div.mobile {
-    padding: 1.25rem 2rem;
-    height: 5rem;
+    position: relative;
+    z-index: 2;
+    padding: 1rem;
+    min-width: 310px;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     background-color: #061d48;
+}
+
+@media only screen and (min-width: 800px) {
+    header div.mobile {
+        padding: 1.25rem 2rem;
+        height: 5rem;
+    }
 }
 
 header .desktop {
@@ -264,8 +288,13 @@ header .desktop {
 
 
 
-/*----- Main -----*/
 
+/*----- Main -----*/
+@media only screen and (min-width: 800px) {
+    section:not(:first-child) {
+        padding: 1em 0;
+    }
+}
 /* Feature */
 #feature {
     height: 25em;
@@ -276,6 +305,13 @@ header .desktop {
     background-repeat: no-repeat
 }
 
+@media only screen and (min-width: 800px) {
+   #feature {
+       height: 40em;
+       align-items: center;
+   }
+}
+
 #feature .section-container {
     padding: 0 3em;
     grid-area: 1 / 1 / span 1 / span 2;
@@ -284,20 +320,51 @@ header .desktop {
     color: white;
 }
 
+@media only screen and (min-width: 800px) {
+    #feature .section-container {
+        padding-left: 10em;
+        grid-area: content-b;
+        justify-self: right;
+        align-self:flex-end;
+    }
+}
+
 #feature-contents {
     padding-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+    #feature-contents {
+        padding-bottom: 0;
+    }
 }
 
 #feature-contents h1 {
     margin: 0;
     font-weight: normal;
     font-size: 2.25rem;
+    text-transform: uppercase;
     line-height: 2.4rem;
+}
+
+@media only screen and (min-width: 800px) {
+   #feature-contents h1 {
+       margin-top: 1em;
+       font-size: 4rem;
+       line-height: 1.1em;
+   }
 }
 
 #feature-contents p {
     margin: .5rem 0;
     font-size: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+   #feature-contents p {
+       margin-top: .5em;
+       font-size: 1.4rem;
+   }
 }
 
 #feature-contents button {
@@ -310,8 +377,21 @@ header .desktop {
     cursor:pointer;
 }
 
+@media only screen and (min-width: 800px) {
+   #feature-contents button {
+       margin: 2em 0;
+       font-size: 1.2rem;
+   }
+}
+
 #feature-contents button:active {
     border: 4px solid #93e5d5;
+}
+
+@media only screen and (min-width: 800px) {
+    #feature .divider img {
+        transform: scaleX(-1)
+    }
 }
 
 
@@ -319,7 +399,7 @@ header .desktop {
 
 /* News */
 #news {
-    padding-bottom: 3em;
+    padding: 0 0 3em;
 }
 
 #news .section-container {
@@ -341,13 +421,19 @@ header .desktop {
 
 @media screen and (min-width: 800px) {
     #news hr {
-        width: 90%;
+        width: 85%;
     }    
 }
 
 #news .news-snippet-container {
     padding: .5rem 0;
     gap: .5em;
+}
+
+@media only screen and (min-width: 800px) {
+    #news .news-snippet-container {
+        margin-bottom: 1.25rem;
+    }
 }
 
 #news .news-snippet {
@@ -393,11 +479,17 @@ header .desktop {
 
 /* Happening */
 
-#event .section-container{
+#event .section-container {
     flex-direction: column;
     padding: 2rem;
     width: 100%;
     gap: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+    #event .section-container {
+        flex-direction: row;
+    }
 }
 
 #event .happening-now {
@@ -495,7 +587,8 @@ header .desktop {
 }
 
 #about .section-container .about-info-box .about-info-container h2 {
-    margin: 0;
+    margin: 0 0 .5em;
+    line-height: 1.3em;
 }
 
 #about .section-container .about-info-box .about-info-container p {
@@ -511,6 +604,12 @@ header .desktop {
     padding: 2em;
     width: 100%;
     gap: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+    #support .section-container {
+        flex-direction: row;
+    }
 }
 
 #support .support-text-container {
@@ -567,6 +666,14 @@ aside {
     background-color: #00dfb3;
 }
 
+@media only screen and (min-width: 800px) {
+    aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 aside p {
     font-family: Poppins, Helvetica, sans-serif;
     font-weight: bold;
@@ -596,7 +703,8 @@ aside button:hover {
 
 @media only screen and (min-width: 800px) {
     aside .max-width {
-        padding: 2rem;
+        padding: 3rem;
+        width: 100%;
     }
 }
 
@@ -609,6 +717,7 @@ footer nav {
         margin: 2rem auto;
         max-width: 1000px;
         display: flex;
+        justify-content: space-between;
         background-color: #ffffff;
     }
 
@@ -634,11 +743,12 @@ footer nav {
 #credits {
     min-width: 375px;
     padding: 0.5em 0 0.5em;
-    background-color: #273043;
+    background-color: #061d48;
 }
 
 #credits .max-width {
     padding: .5em;
+    width: 100%;
 }
 
 #credits ul {
@@ -646,6 +756,7 @@ footer nav {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 #credits ul li {
@@ -667,17 +778,19 @@ footer nav {
 }
 
 @media only screen and (min-width: 800px) {
+    #credits {
+        display: flex;
+        justify-content: center;
+    }
+
     #credits ul {
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         margin-right: 1rem;
+        gap: 1rem;
     }
 
     #credits ul li {
         margin: 0 .25rem;
-    }
-
-    #credits ul .divider {
-        display: flex;
     }
 }
