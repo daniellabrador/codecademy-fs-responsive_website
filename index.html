@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sunrise Table Tennis Club</title>
+        <link rel="stylesheet" type="text/css" href="./resources/style/index.css">
+        <link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Codecademy, html, css">
+        <meta name="description" content="This website showcase Sunrise Table Tennis Club, a fictional organization that houses table tennis players and enthusiasts of all ages. This training project, prepared by Codecademy, has been an invaluable exercise in enhancing my knowledge on the application of CSS techniques on making websites responsive.">
+        <meta name="author" content="Daniel Labrador">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/54d70efba3.js" crossorigin="anonymous"></script>
+        <script src="./resources/script/index.js" defer></script>
+    </head>
+    <body>
+
+
+        <!--------------  HEADER  ----------------->
+        <div id="offer"><i class="fas fa-check-circle"></i> <span id="offer-message" class="offer-message">LIMITED TIME OFFER - Sign up today, pay nothing!</span></div>
+        <header>
+            <div class="mobile">
+                <div class="logo"><img src="./resources/img/Icon.svg" alt="Logo"> Sunrise</div>
+                <div class="menu-container"><span class="menu-text">Menu</span> <i class="fas fa-bars menu-icon"></i></div>
+            </div>
+            <nav class="mobile"><ul>
+                <a href=""><li>Play</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Contact</li></a>
+                <a href=""><li>Support</li></a>
+            </ul></nav>
+            <div class="desktop">
+                <div class="logo"><img src="./resources/img/Icon.svg" alt="Logo"> Sunrise</div>
+                <nav><ul>
+                    <li><a href="#about">About</a></li>
+                </ul></nav>
+            </div>
+        </header>
+
+
+
+        
+        <!---------------  MAIN  ------------------>
+        <main>
+            <!-- Feature -->
+            <section id="feature" class="divider-bottom">
+                <div class="section-container max-width-half-right">
+                    <div id="feature-contents">
+                        <h1>Join the<br>Community</h1>
+                        <p>Discover your inner champion in Sunrise Table Tennis Club</p>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+
+                <!-- Divider --> <div class="divider">
+                    <img src="./resources/img/divider-triangle-uneven-bottom.svg" alt="">
+                <!-- Divider --> </div>
+            </section>
+
+            <!-- News -->
+            <section id="news">
+                <div class="section-container max-width">
+                    <p class="important club-description">Sunrise Table Tennis Club prioritizes working with people who have least access but would benefit most from playing and being part of the STTC community.</p>
+
+                    <hr><div class="news-snippet-container col3-container">
+                        <article class="news-snippet">
+                            <h2>Fortes All-Stars Cup</h2>
+                            <p>Register today for the cup or check the leaderboard.</p>
+                            <p class="news-snippet-more"><a href="">More &gt;&gt;</a>
+                            </p>
+                        </article>
+                        <article class="news-snippet">
+                            <h2>Thursday Lunch</h2>
+                            <p>Join us for lunch every Thursday, 12:30pm PT.</p>
+                            <p class="news-snippet-more"> <a href="">More &gt;&gt;</a>
+                            </p>
+                        </article>
+                        <article class="news-snippet">
+                            <h2>COVID Update</h2>
+                            <p>We are gradually opening up more sessions.</p>
+                            <p class="news-snippet-more"><a href="">More &gt;&gt;</a>
+                            </p>
+                        </article>
+                    </div><hr>
+                </div>
+            </section>
+
+            <!-- Featured Videos -->
+            <section id="featured-videos">
+                <div class="section-container max-width  col2-container">
+                    <div class="yt-video-container">
+                        <iframe width="100%" height="100%"src="https://www.youtube.com/embed/W9mokLmqY9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="yt-video-container">
+                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/YMBCsRpZTcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event -->
+            <section id="event">
+                <div class="section-container max-width  flex-container">
+                    <div class="happening-now flex-container">
+                        <div><p>Happening Now</p></div>
+                        <h2>Fortes<br>All-Stars<br>Cup</h2>
+                        <div>
+                            <a href="">Register to Play</a>
+                            <a href="">View Results</a>
+                            <a href="">View Player Numbers</a>
+                            <a class="event-more" href="">Find Out More</a></div>
+                    </div>
+                    <div class="yt-video-container">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/q0n6QRwhTfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section id="about">
+                <div class="section-container max-width col3-container">
+                    <a href="">
+                        <div class="about-info-box" style="background-image: url('./resources/img/feature-1.jpg');">
+                            <div class="about-info-container">
+                                <h2>About Us</h2>
+                                <p>Our ethos, mission and future plans</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="about-info-box" style="background-image: url('./resources/img/feature-2.jpg')">
+                            <div class="about-info-container">
+                                <h2>STTC In Action</h2>
+                                <p>Take a look at our picture gallery to get a taste of Sunrise Table Tennis Club in action</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href=""><div class="about-info-box" style="background-image: url('./resources/img/feature-3.jpg')">
+                        <div class="about-info-container">
+                            <h2>Annual Report</h2>
+                            <p>Read the latest Sunrise Table Tennis Club annual report</p>
+                        </div>
+                    </div></a>
+                    <a href=""><div class="about-info-box" style="background-image: url('./resources/img/feature-4.jpg')">
+                        <div class="about-info-container">
+                            <h2>We're in the News</h2>
+                            <p>STTC hass attracted a huge amount of press over the years—read more here</p>
+                        </div>
+                    </div></a>
+                    <a href=""><div class="about-info-box" style="background-image: url('./resources/img/feature-5.jpg')">
+                        <div class="about-info-container">
+                            <h2>Building the Grass Roots</h2>
+                            <p>A unique initiative from STTC</p>
+                        </div>
+                    </div></a>
+                    <a href=""><div class="about-info-box" style="background-image: url('./resources/img/feature-6.jpg')">
+                        <div class="about-info-container">
+                            <h2>STTC Film and Video</h2>
+                            <p>The story behind STTC in video and film, including a Netflix documentary</p>
+                        </div>
+                    </div></a>
+                </div>
+            </section>
+
+            <!-- Support -->
+            <section id="support">
+                <div class="section-container max-width  flex-container">
+                    <div class="support-text-container flex-container">
+                        <h2>SUPPORT US</h2>
+                        <p>We are committed to making sure that we always welcome everyone to play at the club and your donations help make that happen</p>
+                        <p class="important">Support Sunrise Table Tennis Club with a donation or set up a direct debit to make regular gifts.</p>
+                        <div><a href="">MAKE A DONATION</a></div>
+                    </div>
+                    <div class="image-container">
+                        <img src="./resources/img/support.jpg" alt="Players excited">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <!--------------  FOOTER  ----------------->
+        <footer>
+            <!-- Aside -->
+            <aside>
+                <div class="max-width">
+                    <p>Register your email for news and special updates</p>
+                    <button>Sign Up for Newsletter</button>
+                </div>
+            </aside>
+
+            <!-- Bottom Nav -->
+            <nav>
+                <div>
+                    <h3>GET IN TOUCH</h3>
+                    <ul>
+                        <a href=""><li>General: info@sttc.com</li></a>
+                        <a href=""><li>Coaching: coach@sttc.com</li></a>
+                        <a href=""><li>Press: press@sttc.com</li></a>
+                        <a href=""><li>Tel: 01234 56789</li></a><br>
+                        <a href=""><li>Enquiry Form</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>THE CLUB</h3>
+                    <ul>
+                        <a href=""><li>About the club</li></a>
+                        <a href=""><li>Timetable</li></a>
+                        <a href=""><li>Find us</li></a>
+                        <a href=""><li>Support us</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>STTC</h3>
+                    <ul>
+                        <a href=""><li>STTC in the Press</li></a>
+                        <a href=""><li>STTC Academic Reports</li></a>
+                        <a href=""><li>Blogs & Newsletters</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FIND US</h3>
+                    <ul>
+                        <a><li>Finster Auditorium</li></a>
+                        <a><li>123 Fictional St</li></a>
+                        <a><li>Central City</li></a><br>
+                        <a href=""><li>Map and Directions</li></a>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Credits -->
+            <div id="credits">
+                <div class="max-width">
+                    <ul>
+                        <li><a href="#">Data Protection</a></li>
+                        <li class="divider"> | </li>
+                        <li><a href="#">General Terms & Conditions</a></li>
+                        <li class="divider"> | </li>
+                        <li><a href="https://github.com/daniellabrador/codecademy-motion_home_page#project-prompt">Codecademy Project by Daniel Labrador</a></li>
+                        <li class="divider"> | </li>
+                        <li>&copy; <a href="#">2021 Sunrise Table Tennis Club</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
