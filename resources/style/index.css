@@ -56,6 +56,12 @@ section {
     display: flex;
 }
 
+@media only screen and (min-width: 800px) {
+    .section-container {
+        padding: 3rem !important;
+    }
+}
+
 .section-container div {
     width: 100%;
 }
