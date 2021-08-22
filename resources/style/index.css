@@ -49,6 +49,7 @@ h1 {
 
 section {
     min-width: 375px;
+    overflow: hidden;
 }
 
 .section-container {
@@ -72,13 +73,14 @@ section {
     display: flex;
     align-items: flex-end;
     text-align: center;
-    border: 0;
-    width: 105%;
+    width: calc(100% + 2px);
+    overflow: hidden;
 }
 
 .divider img {
+    width: 101%;
     position: relative;
-    width: 105%;
+    width: 100%;
     left: -1px;
     top: 1px;
     user-select: none;
