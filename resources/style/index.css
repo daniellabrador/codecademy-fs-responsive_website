@@ -335,8 +335,14 @@ header .desktop {
 
 #news hr {
     height: .18rem;
-    width: 90%;
+    width: 100%;
     background-color: #061d48;
+}
+
+@media screen and (min-width: 800px) {
+    #news hr {
+        width: 90%;
+    }    
 }
 
 #news .news-snippet-container {
@@ -377,7 +383,7 @@ header .desktop {
 }
 
 #featured-videos .section-container{
-    padding: 3rem;
+    padding: 2rem;
     width: 100%;
 }
 
