@@ -23,7 +23,7 @@ Your project should demonstrate many of the responsive design tools you learned.
 
 ## Setup
 
-To view the final output, click [here](https://daniellabrador.github.io/codecademy-sunrise_club_responsive_website/).
+To view the final output, click [here](https://daniellabrador.github.io/codecademy-fs-responsive_website/).
 
 ## Sources
 
